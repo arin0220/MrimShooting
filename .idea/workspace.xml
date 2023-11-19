@@ -22,7 +22,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="819c3979-a11c-4f14-977e-582e84ca8fcc" name="Default Changelist" comment="토대 완성" />
+    <list default="true" id="819c3979-a11c-4f14-977e-582e84ca8fcc" name="Default Changelist" comment="토대 완성">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/binghe/ETC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/binghe/ETC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/binghe/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/binghe/Music.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/binghe/ETC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binghe/ETC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/binghe/Music.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binghe/Music.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/binghe/testClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/binghe/스토리$keyMusic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/binghe/스토리.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +46,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/mirimShooting" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -60,7 +70,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/82103/Desktop/폴더/학교/Mirimshooting",
+    "last_opened_file_path": "C:/Users/82103/IdeaProjects/Java_Mirims_Shooting",
     "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.VCS"
   }
 }]]></component>
@@ -70,10 +80,55 @@
       <recent name="$PROJECT_DIR$/res/img" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.binghe.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+  <component name="RunManager" selected="Application.GUI_ETC">
+    <configuration name="GUI_ETC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.binghe.GUI_ETC" />
       <module name="2019WorldWar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.binghe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GUI_MENU" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.binghe.GUI_MENU" />
+      <module name="2019WorldWar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.binghe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Story" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.binghe.Story" />
+      <module name="2019WorldWar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.binghe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StoryGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.binghe.StoryGUI" />
+      <module name="2019WorldWar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.binghe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -91,18 +146,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test" />
-      <module name="2019WorldWar" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GUI_ETC" />
+        <item itemvalue="Application.GUI_MENU" />
         <item itemvalue="Application.com.binghe.Main" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.test" />
+        <item itemvalue="Application.Story" />
+        <item itemvalue="Application.StoryGUI" />
       </list>
     </recent_temporary>
   </component>
@@ -129,6 +179,14 @@
       <workItem from="1588580971709" duration="2098000" />
       <workItem from="1588607594296" duration="952000" />
     </task>
+    <task id="LOCAL-00001" summary="토대 완성">
+      <created>1700407141788</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700407141788</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,5 +202,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="토대 완성" />
+    <option name="LAST_COMMIT_MESSAGE" value="토대 완성" />
   </component>
 </project>

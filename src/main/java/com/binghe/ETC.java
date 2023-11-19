@@ -159,7 +159,7 @@ class ETC {
 			String userName = sc.next();
 			User user1 = new User(userName);
 			ETC.printLoading();
-			스토리 스토리 = new 스토리();
+			Story story = new Story();
 			return user1;
 		}
 		else if(choice == 2) { // 불러오기.
