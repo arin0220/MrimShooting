@@ -132,7 +132,7 @@ public class GameObject extends JFrame implements Runnable{
 		addKeyListener(key);
 //		setDefaultCloseOperation(EXIT_ON_CLOSE);
 //		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-		setTitle("2019 World War");
+		setTitle("mirimShooting");
 		setResizable(false);
 		setSize(frameWidth,frameHeight);
 		setLocationRelativeTo(null);

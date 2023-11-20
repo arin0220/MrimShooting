@@ -22,16 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="819c3979-a11c-4f14-977e-582e84ca8fcc" name="Default Changelist" comment="토대 완성">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="819c3979-a11c-4f14-977e-582e84ca8fcc" name="Default Changelist" comment="메인 화면, menu gui 변경">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/binghe/ETC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/binghe/ETC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/binghe/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/binghe/GameObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/binghe/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/binghe/Music.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binghe/ETC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binghe/ETC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binghe/Music.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binghe/Music.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binghe/testClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binghe/스토리$keyMusic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binghe/스토리.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +64,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/82103/IdeaProjects/Java_Mirims_Shooting",
+    "last_opened_file_path": "D:/자바/project-shootinggame-master",
     "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.VCS"
   }
 }]]></component>
@@ -186,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700407141788</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="메인 화면, menu gui 변경">
+      <created>1700421272985</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700421272985</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +206,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="토대 완성" />
-    <option name="LAST_COMMIT_MESSAGE" value="토대 완성" />
+    <MESSAGE value="메인 화면, menu gui 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="메인 화면, menu gui 변경" />
   </component>
 </project>

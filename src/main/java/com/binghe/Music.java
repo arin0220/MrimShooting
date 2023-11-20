@@ -80,9 +80,9 @@ class Story extends JFrame {
 
 	public Story() {
 		story = "<html>2019년 연이은 여러 나라들의 패권싸움과 갈등으로 인해 세계 대전이 발발한다.<br><br>" +
-				"지리적 전략적인 위치에 있는 대한민국은 여러 나라들의 표적이 되고 만다.<br><br>" +
-				"많은 나라들이 한국에 전투기를 보내 한국을 점령하려고 하고 있다.<br><br>" +
-				"이에 대한민국 공군은 공격해 오는 많은 나라들의 전투기로부터 영토를 지키려한다.<br><br>" +
+//				"지리적 전략적인 위치에 있는 대한민국은 여러 나라들의 표적이 되고 만다.<br><br>" +
+//				"많은 나라들이 한국에 전투기를 보내 한국을 점령하려고 하고 있다.<br><br>" +
+//				"이에 대한민국 공군은 공격해 오는 많은 나라들의 전투기로부터 영토를 지키려한다.<br><br>" +
 				"대한민국의 영토와 자주권은 여러분에게 달렸습니다. 꼭 지켜주기 바랍니다!</html>";
 
 		currentIndex = 0;
@@ -91,6 +91,7 @@ class Story extends JFrame {
 		label.setHorizontalAlignment(JLabel.CENTER); // 텍스트를 중앙 정렬
 		label.setVerticalAlignment(JLabel.CENTER); // 텍스트를 중앙 정렬
 		add(label, BorderLayout.CENTER); // label을 CENTER에 배치
+
 		JButton skipButton = new JButton("Skip");
 
 		skipButton.addActionListener(new ActionListener() {
@@ -104,9 +105,13 @@ class Story extends JFrame {
 					musicThread.stop(); // Music 스레드 중지
 				}
 				dispose(); // 프레임 종료
+				// 실행할 GUI_MENU 클래스의 메인 메서드 호출
+				GUI_MENU.main(null);
 			}
 		});
 		add(skipButton, BorderLayout.SOUTH);
+
+		musicThread = new Music("src/main/SOURCE/keyboard.wav");
 
 		Timer timer = new Timer(100, new ActionListener() {
 			@Override
@@ -124,6 +129,9 @@ class Story extends JFrame {
 						public void actionPerformed(ActionEvent e) {
 							((Timer) e.getSource()).stop();
 							dispose(); // 프레임 종료
+							//menu 실행
+							// 실행할 GUI_MENU 클래스의 메인 메서드 호출
+							GUI_MENU.main(null);
 						}
 					});
 					exitTimer.setRepeats(false);
@@ -174,5 +182,6 @@ class Story extends JFrame {
 				new Story();
 			}
 		});
+
 	}
 }
