@@ -52,8 +52,8 @@ public class GameObject extends JFrame implements Runnable{
 	ArrayList<Boss> Bosses = new ArrayList<Boss>(); // 적들의 객체를 담을 리스트.
 	ArrayList<Effect> Effects = new ArrayList<Effect>(); // 적 비행기 폭발 이팩트.
 	ArrayList<BEffect> BEffects = new ArrayList<BEffect>(); // 적 보스 비행기 폭발 이팩트. ( 이미지 사이즈가 달라서 따로 저장. )
-	
-	
+
+	Image playerImage; // 플레이어 이미지 변수 추가
 	
 	public GameObject(Player player, int Stage, User user) {
 		this.player = player; // 플레이어 정보 받아오기.
@@ -85,6 +85,8 @@ public class GameObject extends JFrame implements Runnable{
 		BenemyExplosionImg[2] = tk.getImage("src/main/SOURCE/explosion3.png");
 		BenemyExplosionImg[3] = tk.getImage("src/main/SOURCE/explosion4.png");
 		BenemyExplosionImg[4] = tk.getImage("src/main/SOURCE/explosion5.png");
+
+		playerImage = Toolkit.getDefaultToolkit().getImage("src/main/SOURCE/F4K.png");
 
 		// 적 몬스터 생성.
 		if(Stage == 1) { // 첫번째 스테이지 몬스터.
@@ -196,8 +198,16 @@ public class GameObject extends JFrame implements Runnable{
 	
 	// 플레이어 비행기에 대한 출력.
 	public void drawPlayer(Graphics g) {
-		buffG.drawImage(this.player.img,this.player.posX,this.player.posY, this);
-		
+		System.out.println("플레이어를 그리는 중...");  // 디버그 문장
+
+		if (this.player.img == null) {
+			System.out.println("플레이어 이미지가 null입니다!");  // 디버그 문장
+			return;
+		}
+
+		buffG.drawImage(this.playerImage, this.player.posX, this.player.posY, this);
+
+
 		// 플레이어의 피가0이 되면 모두 종료.
 		if(this.player.HP <= 0) {
 			try {
@@ -376,20 +386,17 @@ public class GameObject extends JFrame implements Runnable{
 				BEffects.remove(i);
 		}
 	}
-	
+
 	@Override
 	public void run() {
-		// 게임 진행시 main스레드를 join으로 묶어 두고 있기 위함.
-		while(true) {
-//			if(this.player.HP <=0 || Enemys.size() <= 0 && Bosses.size() <= 0)
-//				break;
-//			else {
-//				System.out.print("");
-//				continue;
-//			}
-			if(this.checkExit == true)
+		while (true) {
+			if (this.checkExit) {
+				// 게임 종료 후 메뉴 창으로 돌아감
+				SwingUtilities.invokeLater(() -> new GUI_MENU(user).setVisible(true));
+				// 현재 창을 닫음
+				this.dispose();
 				break;
-			else {
+			} else {
 				System.out.print("");
 				continue;
 			}

@@ -18,11 +18,11 @@ public class GUI_BATTLE extends JFrame {
         setSize(800, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        JTextArea textArea = new JTextArea();
-        textArea.setEditable(false);
+//        JTextArea textArea = new JTextArea();
+//        textArea.setEditable(false);
 
-        JScrollPane scrollPane = new JScrollPane(textArea);
-        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+//        JScrollPane scrollPane = new JScrollPane(textArea);
+//        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 
         JButton stage1Button = createStyledButton("STAGE 1");
         JButton stage2Button = createStyledButton("STAGE 2");
@@ -53,7 +53,7 @@ public class GUI_BATTLE extends JFrame {
         exitButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.exit(0);
+                backToMenu();
             }
         });
 
@@ -64,11 +64,16 @@ public class GUI_BATTLE extends JFrame {
         buttonPanel.add(exitButton);
 
         setLayout(new BorderLayout());
-        add(scrollPane, BorderLayout.CENTER);
+//        add(scrollPane, BorderLayout.CENTER);
         add(buttonPanel, BorderLayout.SOUTH);
 
         setLocationRelativeTo(null);
         setVisible(true);
+    }
+
+    private void backToMenu() {
+        SwingUtilities.invokeLater(() -> new GUI_MENU(user).setVisible(true));
+        dispose();
     }
 
     private JButton createStyledButton(String text) {
@@ -83,17 +88,17 @@ public class GUI_BATTLE extends JFrame {
         Thread gameThread = new Thread(gameObject);
 
         // 게임 스레드가 종료될 때 GUI_MENU 창을 다시 표시하는 스레드 생성
-        Thread menuThread = new Thread(() -> {
-            try {
-                gameThread.join(); // 게임 스레드가 종료될 때까지 대기
-                SwingUtilities.invokeLater(() -> new GUI_MENU(user).setVisible(true));
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        });
+//        Thread menuThread = new Thread(() -> {
+//            try {
+//                gameThread.join(); // 게임 스레드가 종료될 때까지 대기
+//                SwingUtilities.invokeLater(() -> new GUI_MENU(user).setVisible(true));
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//        });
 
         // 백그라운드 스레드 실행
-        menuThread.start();
+//        menuThread.start();
 
         // 게임 스레드 시작
         gameThread.start();

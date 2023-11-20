@@ -22,10 +22,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="819c3979-a11c-4f14-977e-582e84ca8fcc" name="Default Changelist" comment="메인 화면, menu gui 변경">
+    <list default="true" id="819c3979-a11c-4f14-977e-582e84ca8fcc" name="Default Changelist" comment="게임 화면 수정중, 이미지 전부 변경 완">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/SOURCE/Boss1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/SOURCE/Boss1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/SOURCE/Boss2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/SOURCE/Boss2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/SOURCE/F15K.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/SOURCE/F15K.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/SOURCE/F35K.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/SOURCE/F35K.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/SOURCE/F4K.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/SOURCE/F4K.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/SOURCE/background.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/SOURCE/background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/SOURCE/enemyFlight.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/SOURCE/enemyFlight.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/binghe/GUI_BATTLE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/binghe/GUI_BATTLE.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/binghe/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/binghe/GameObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/binghe/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/binghe/Music.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/binghe/GameObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binghe/GameObject.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +73,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/자바/project-shootinggame-master",
+    "last_opened_file_path": "C:/Users/82103/Desktop/폴더/학교/MirimShooting_b",
     "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.VCS"
   }
 }]]></component>
@@ -187,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700421272985</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="MENU_GUI를 설명 끝나고 뜨도록 변경, 전투 gui 생성">
+      <created>1700460549055</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700460549055</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +223,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="토대 완성" />
     <MESSAGE value="메인 화면, menu gui 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="메인 화면, menu gui 변경" />
+    <MESSAGE value="MENU_GUI를 설명 끝나고 뜨도록 변경, 전투 gui 생성" />
+    <MESSAGE value="게임 화면 수정중, 이미지 전부 변경" />
+    <MESSAGE value="게임 화면 수정중, 이미지 전부 변경 완" />
+    <option name="LAST_COMMIT_MESSAGE" value="게임 화면 수정중, 이미지 전부 변경 완" />
   </component>
 </project>
